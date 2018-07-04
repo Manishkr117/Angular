@@ -1,0 +1,17 @@
+.items-row{
+width: 100%;
+overflow-x: hidden;
+overflow-y: auto;
+/* flex-wrap: wrap; */
+display: flex;
+}
+.item{
+border: 1px solid gray;
+padding: 2px;margin:2px;
+border-radius: 10px;
+cursor: pointer;
+}
+.item img{
+    width:100px;
+    height: 130px;
+}

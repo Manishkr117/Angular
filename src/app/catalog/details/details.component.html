@@ -1,0 +1,19 @@
+<H3 *ngIf="!selected"> Select any product></H3>
+<div *ngIf="selected" class="panel panel-danger">
+  <div class="panel-body row">
+    <img src="assets/images/{{selected.Category}}/{{selected.Image}}" alt="" class="thumbnail col-md-3 col=sm-3" height ="350">
+    <div class="col-md-6 col-sm-6">
+      <h3>{{selected.Name}}</h3>
+      <blockquote>
+        <strong><span>{{selected.Price | currency:'INR':False}}</span></strong>
+        <br>
+        <strong><span>{{selected.Rating | rateme}}</span></strong>
+      </blockquote>
+      <p>{{selected.Description}}</p>
+    </div>
+  </div>
+</div>
+<p *ngIf="selected">
+  details works!
+  {{selected.Name}}
+</p>

@@ -1,0 +1,9 @@
+<section class="panel panel-default">
+  <div class="items-row panel-heading">
+    <div class="item" *ngFor="let P of Products"
+      (click)="OnSelect(P)">
+      <img src="assets/images/{{P.Category}}/{{P.Image}}" alt="">
+    </div>
+  </div>
+</section>
+<app-details [selected]="selected"></app-details>

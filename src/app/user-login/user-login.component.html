@@ -1,0 +1,23 @@
+<p>
+  user-login works!
+</p>
+
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+      <form class='panel-body'> -->
+          <!-- Login Name -->
+        <div class="form-group">
+          <label for ="">Login Name:</label>
+          <input type='text' class="form-control" required name="LoginName"
+          [(ngModel)="userinfo.LoginName"]>
+        </div>
+        <!-- Password -->
+       <div class="form-group">
+            <label for ="">Password:</label>
+            <input type='password' class="form-control" required name="Password"
+            [(ngModel)]="userInfo.Password">
+          </div>
+          <button class="btn btn-block btn-success" type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
